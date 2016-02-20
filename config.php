@@ -10,7 +10,7 @@ if(isset($_GET['directory'])){
 }
 // or default starting point
 else{
-/bin/bash: q : commande introuvable
+    $basedir='/media/photos/2016';
 }
 $basedir=realpath($basedir);
 
