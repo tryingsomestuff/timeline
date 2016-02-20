@@ -1,0 +1,32 @@
+<?php
+
+//////////////////////////////
+//get browsing starting point
+//////////////////////////////
+$basedir='';
+// from given URL variable
+if(isset($_GET['directory'])){
+    $basedir=$_GET['directory'];
+}
+// or default starting point
+else{
+/bin/bash: q : commande introuvable
+}
+$basedir=realpath($basedir);
+
+//////////////////////////////
+//max level up directory
+//////////////////////////////
+$rootdir=realpath('/media/photos/');
+
+//////////////////////////////
+// thumb size
+//////////////////////////////
+$thumbsize=450;
+
+//////////////////////////////
+// lightbox size
+//////////////////////////////
+$lightboxsize=700;
+
+?>
