@@ -25,7 +25,7 @@
 <div class="container">
 
 <header class="clearfix">
-<span>Julia et Vivien</span>
+<span>Jade</span>
 <h1>Photos</h1>
 <p>
 <?php

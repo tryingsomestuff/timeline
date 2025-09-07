@@ -97,7 +97,6 @@ z-index: 6;
 
 <div id="container">
 <h1>Photos de Jade</h1>
-<h2>par Julia et Vivien</h2>
 <ul class="gallery">
 <?php
 require("php/common/util.php");

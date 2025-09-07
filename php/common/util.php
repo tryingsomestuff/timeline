@@ -135,6 +135,8 @@ function listdiraux($dir, &$files, $rec=false) {
 // check exif data
 function cameraUsed($imagePath) {
 
+    return false;
+
     // Check if the variable is set and if the file itself exists before continuing
     if ( (isset($imagePath)) and (file_exists($imagePath))) {
         // There are 2 arrays which contains the information we are after, so it's easier to state them both

@@ -36,7 +36,7 @@ getImage($dirs,$pics,true);
 //dirloop($dirs);
 fileloop($pics);
 ?>
-<div>
+</div>
 
     <script>
 
@@ -51,7 +51,7 @@ fileloop($pics);
         $('.Collage').removeWhitespace().collagePlus(
             {
                 'fadeSpeed'     : 2000,
-                'targetHeight'  : 200
+                'targetHeight'  : 255
             }
         );
     };

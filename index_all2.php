@@ -19,10 +19,6 @@
 
 <body>
 
-<header>
-<h1>Photos, by Julia et Vivien</h1>
-</header>
-
 <?php
 require("php/template6/loop.php");
 ?>
@@ -35,39 +31,39 @@ getImage($dirs,$pics,true);
 //dirloop($dirs);
 fileloop($pics);
 ?>
-<div>
+</div>
 
 
 <script src="js/common/jquery-1.11.0.min.js"></script>
 <script src="js/jquery.montage.min.js"></script>
 
 <script type="text/javascript">
-	$(function() {
-		var $container = $('#am-container'),
-			$imgs = $container.find('img').hide(),
-			totalImgs = $imgs.length,
-			cnt = 0;
+$(function() {
+    var $container = $('#am-container'),
+            $imgs = $container.find('img').hide(),
+            totalImgs = $imgs.length,
+            cnt = 0;
 
-			$imgs.each(function(i) {
-				var $img	= $(this);
-				$('<img/>').load(function() {
-					++cnt;
-					if( cnt === totalImgs ) {
-						$imgs.show();
-						$container.montage({
-							minsize	: true,
-							margin 	: 2
-                                                        fillLastRow	: false,
-                                                        alternateHeight	: true,
-                                                        alternateHeightRange : {
-	                                                      min	: 90,
-	                                                      max	: 240
-                                                        }
-						});
-					}
-				}).attr('src',$img.attr('src'));
-			});
-	});
+    $imgs.each(function(i) {
+        var $img	= $(this);
+        $('<img/>').load(function() {
+            ++cnt;
+            if( cnt === totalImgs ) {
+                $imgs.show();
+                $container.montage({
+                    minsize	: false,
+                    margin 	: 2,
+                    fillLastRow	: false,
+                    alternateHeight	: true,
+                    alternateHeightRange : {
+                    min	: 200,
+                    max	: 600
+                }
+                });
+            }
+        }).attr('src',$img.attr('src'));
+    });
+});
 </script>
 
 </body>

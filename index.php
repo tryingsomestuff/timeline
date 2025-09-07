@@ -27,7 +27,7 @@
 <body>
 
 <header>
-<h1>Photos, by Julia et Vivien</h1>
+<h1>Photos, Jade</h1>
 </header>
 
 <p>

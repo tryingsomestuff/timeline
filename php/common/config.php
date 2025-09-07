@@ -20,7 +20,7 @@ $thumbsizedir=$thumbsizedirDefault;
 $lightboxsize=$lightboxsizeDefault;
 $createthumb=$createthumbDefault;
 
-$defaultdir='/mnt/BK1/PHOTO';
+$defaultdir='/mnt/BK2/PHOTO/Jade';
 
 $defaultrootdir=$defaultdir;
 
